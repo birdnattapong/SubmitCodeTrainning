@@ -1,0 +1,13 @@
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.csprojAssemblyReference.cache
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.csproj.CoreCompileInputs.cache
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.AssemblyInfoInputs.cache
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.AssemblyInfo.cs
+D:\test\Homework09\bin\Debug\netcoreapp3.1\Homework09.exe
+D:\test\Homework09\bin\Debug\netcoreapp3.1\Homework09.deps.json
+D:\test\Homework09\bin\Debug\netcoreapp3.1\Homework09.runtimeconfig.json
+D:\test\Homework09\bin\Debug\netcoreapp3.1\Homework09.runtimeconfig.dev.json
+D:\test\Homework09\bin\Debug\netcoreapp3.1\Homework09.dll
+D:\test\Homework09\bin\Debug\netcoreapp3.1\Homework09.pdb
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.dll
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.pdb
+D:\test\Homework09\obj\Debug\netcoreapp3.1\Homework09.genruntimeconfig.cache
