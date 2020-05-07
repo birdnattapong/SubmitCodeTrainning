@@ -27,7 +27,14 @@ namespace Homework09
                 }
                 Console.WriteLine("---");
 
-                Console.WriteLine(String.Format("Total amount: " + "{0:0,0.00}" + " baht", total));
+                if(total == 0.00)
+                {
+                    Console.WriteLine(String.Format("Total amount: " + "{0:0.00}" + " baht", total));
+                }
+                else
+                {
+                    Console.WriteLine(String.Format("Total amount: " + "{0:0,0.00}" + " baht", total));
+                }
 
                 Console.Write("Please input a product key: ");
                 string ans = Console.ReadLine();
