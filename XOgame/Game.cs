@@ -29,16 +29,15 @@ namespace XOgame
             Console.WriteLine("Player2 = '{0}' mark = '{1}'", player[1].PlayerName, player[1].Mark);
             Console.WriteLine();
 
-            for (int i=0; i<3; i++)
-            {
-                Console.WriteLine("     |     |      ");
-                for (int j=0; j<3; j++)
-                {
-                    Console.Write("  {0}  |", board[i, j]);
-                }
-                Console.WriteLine();
-                Console.WriteLine("_____|_____|_____ ");
-            }
+            Console.WriteLine("\t     |     |      ");
+            Console.WriteLine("\t  {0}  |  {1}  |  {2}", board[0, 0], board[0, 1], board[0, 2]);
+            Console.WriteLine("\t_____|_____|_____ ");
+            Console.WriteLine("\t     |     |      ");
+            Console.WriteLine("\t  {0}  |  {1}  |  {2}", board[1, 0], board[1, 1], board[1, 2]);
+            Console.WriteLine("\t_____|_____|_____ ");
+            Console.WriteLine("\t     |     |      ");
+            Console.WriteLine("\t  {0}  |  {1}  |  {2}", board[2, 0], board[2, 1], board[2, 2]);
+            Console.WriteLine("\t     |     |      ");
 
             Console.WriteLine();
         }
