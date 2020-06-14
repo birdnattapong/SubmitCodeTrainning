@@ -1,0 +1,140 @@
+.header {
+    display: flex;
+    color: #eb445a;
+    left: 50%;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.title {
+    text-align: center;
+    transform: translateX(-8%);
+}
+
+.menu-icon {
+    font-size: 30px;
+}
+
+.cart-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 4%;
+}
+
+.top-content {
+    padding: 2%;
+    width: 100%;
+    height: 16%;
+}
+
+.top-comp {
+    padding: 2%;
+    display: flex;
+}
+
+.add {
+    width: 40px;
+    text-align: center;
+}
+
+.add-icon {
+    font-size: 30px;
+}
+
+.mid-content {
+    border-top: 5px solid #cac9c9;
+    height: 18%;
+}
+
+.ticket {
+    padding-left: 2%;
+    padding-top: 4%;
+    border-bottom: 5px solid #cac9c9;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    width: 40px;
+}
+
+.mid-comp {
+    margin-left: 3%;
+}
+
+.date {
+    width: 150px;
+    font-size: 15px;
+    padding-left: 10%;
+}
+
+.drawDate {
+    display: flex;
+}
+
+.bot-comp {
+    width: 100%;
+    height: 40px;
+}
+
+.callDetail {
+    position: relative;
+    left: 75%;
+    top: 40%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ff3434;
+}
+  
+.circle-footer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ff3434;
+}
+
+.img-scan {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-ele{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.bookmark-icon {
+    position: absolute;
+    color: white;
+    width: 50px;
+    height: 30px;
+    left: 50px;
+    top: 8px;
+}
+
+.img-money {
+    position: absolute;
+    right: 50px;
+    width: 50px;
+    height: 30px;
+    top: 8px;
+}

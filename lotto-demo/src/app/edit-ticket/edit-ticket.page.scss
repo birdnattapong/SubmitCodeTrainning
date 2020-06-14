@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    color: #eb445a;
+}
+
+.QuickPickBtn {
+    text-align: center;
+    transform: translateY(-20%);
+    transform: translateX(15%);
+    width: 80%;
+}
+
+ion-back-button{
+    color: #eb445a;
+}
+
+.top-content {
+    display: flex;
+    height: 100px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.numOfTicket {
+    position: absolute;
+    width: 100px;
+    margin-left: 20px;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.top-right {
+    right: 5%;
+    position: absolute;
+    margin-top: 8%;
+}
+
+.DrawDate {
+    display: flex;
+}
+
+.time {
+    position: absolute;
+    right: 0px;
+}
+
+.ballSection {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ballSection section {
+    margin: 2%;
+    border-radius: 50%;
+    width: 10%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball1 {
+    border: 2px solid rgb(55, 103, 235);
+}
+.ball2 {
+    border: 2px solid rgb(55, 103, 235);
+}
+.ball3 {
+    border: 2px solid rgb(55, 103, 235);
+}
+.ball4 {
+    border: 2px solid rgb(55, 103, 235);
+}
+.ball5 {
+    border: 2px solid rgb(55, 103, 235);
+}
+.ball6 {
+    border: 2px solid red;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ff3434;
+}
+
+.saveBtn {
+    color: white;
+    width: 100%;
+    height: 100%;
+}

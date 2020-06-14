@@ -1,0 +1,54 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <div class="header">
+        <ion-icon class="menu-icon" name="menu"></ion-icon>
+        <ion-icon class="cart-icon" name="cart-outline" color="medium"></ion-icon>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <section class="top-content">
+      <div class="top-title" style="font-weight: bold; color: red;">รายการโปรด</div>
+      <section class="top-comp">
+        <div class="add">
+          <ion-icon class="add-icon" name="add-circle" color="danger"></ion-icon>
+          <div class="add-msg">เพิ่ม</div>
+        </div>
+      </section>
+    </section>
+
+    
+    <section class="mid-content">
+      <ion-list *ngFor="let order of orders; let i = index" (click)="goDetail(i)">
+        <section class="ticket">
+          <section class="mid">
+            <div class="logo"><img src="assets/logo.png"></div>
+            <div class="mid-comp">
+              <div style="font-weight: bold;">Powerball</div>
+              <div class="drawDate">
+                <div><b>งวด 115</b>  </div>
+                <div class="date">วันที่ 20 / 04 / 2020</div>
+              </div>
+            </div>
+          </section>
+            
+          <section class="bot-comp">
+            <div class="callDetail" style="color: red;">ดูรายละเอียด</div>
+          </section>
+        </section>
+      </ion-list>
+    </section>
+
+    <section class="footer">
+      <div class="circle-footer" (click)="goBuyTicket()">
+        <img class="img-scan" src="assets/scan.png">
+      </div>
+      <div class="footer-ele">
+        <ion-icon class="bookmark-icon" name="bookmarks-outline"></ion-icon>
+        <img class="img-money" src="assets/money.png">
+      </div>
+    </section>
+  </ion-content>
+</ion-app>

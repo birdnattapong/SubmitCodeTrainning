@@ -1,0 +1,55 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <div class="header">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title">Powerball</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="top-content">
+      <div class="top-left">
+        <ion-button class="QuickPickBtn" shape="round" (click)="quickPick()">Quick pick</ion-button>
+      </div>
+
+      <div class="top-right">
+        <div class="DrawDate">
+          <div style="margin-left: 10px; font-weight: bold;">Draw date</div>
+          <div>:  30 Jan</div>
+        </div>
+        <div class="time">
+          <div>1D : 20Hr : 30M</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ballSection">
+      <section class="ball1">
+        <div>{{getTicket().whiteBall[0]}}</div>
+      </section>
+      <section class="ball2">
+        <div>{{getTicket().whiteBall[1]}}</div>
+      </section>
+      <section class="ball3">
+        <div>{{getTicket().whiteBall[2]}}</div>
+      </section>
+      <section class="ball4">
+        <div>{{getTicket().whiteBall[3]}}</div>
+      </section>
+      <section class="ball5">
+        <div>{{getTicket().whiteBall[4]}}</div>
+      </section>
+      <section class="ball6">
+        <div>{{getTicket().powerBall}}</div>
+      </section>
+    </section>
+
+    <section class="footer">
+      <ion-button class="saveBtn" fill="clear" (click)="save()">Save</ion-button>
+    </section>
+  </ion-content>
+</ion-app>

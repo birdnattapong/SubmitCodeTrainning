@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    color: #eb445a;
+    left: 50%;
+}
+
+.title {
+    text-align: center;
+    transform: translateX(-8%);
+}
+
+ion-back-button{
+    color: #eb445a;
+}
+
+.logo {
+    position: relative;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.top-content {
+    display: flex;
+    height: 100px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-right {
+    right: 5%;
+    position: absolute;
+    margin-top: 8%;
+}
+
+.DrawDate {
+    display: flex;
+}
+
+.time {
+    position: absolute;
+    right: 0px;
+}
+
+.select-ticket {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ff3434;
+}
+
+.nextBtn {
+    color: white;
+    width: 100%;
+    height: 100%;
+}

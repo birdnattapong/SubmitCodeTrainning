@@ -1,0 +1,53 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <div class="header">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title">Powerball</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="top-content">
+      <div class="top-left">
+        <div class="numOfTicket">{{passedVal}} tickets</div>
+      </div>
+
+      <div class="top-right">
+        <div class="DrawDate">
+          <div style="margin-left: 10px; font-weight: bold;">Draw date</div>
+          <div>:  30 Jan</div>
+        </div>
+        <div class="time">
+          <div>1D : 20Hr : 30M</div>
+        </div>
+      </div>
+    </div>
+
+    <ion-list class="ticketSection">
+      <ion-item *ngFor="let ticket of tickets; let i = index">
+        <section class="ticket-box">
+          <div class="ticketNumber">{{ticket.ticketID}}</div>
+          <section>
+            <div class="ball1">{{ticket.whiteBall[0]}}</div>
+            <div class="ball2">{{ticket.whiteBall[1]}}</div>
+            <div class="ball3">{{ticket.whiteBall[2]}}</div>
+            <div class="ball4">{{ticket.whiteBall[3]}}</div>
+            <div class="ball5">{{ticket.whiteBall[4]}}</div>
+            <div class="ball6">{{ticket.powerBall}}</div>
+          </section>
+          <ion-button class="editBtn" slot="end" fill="clear" (click)="goEditTicket(i)">Edit</ion-button>
+        </section>
+      </ion-item>
+    </ion-list>
+
+    <section class="footer">
+      <ion-button class="orderBtn" fill="clear" (click)="presentConfirm()">Order</ion-button>
+    </section>
+  </ion-content>
+</ion-app>
+
+

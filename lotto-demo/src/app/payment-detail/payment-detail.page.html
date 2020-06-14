@@ -1,0 +1,68 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <div class="header">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title">Powerball</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <section class="top-content">
+      <div class="top-left">
+        <div class="logo"><img src="assets/logo.png"></div>
+        <p style="margin-left: 10px; font-weight: bold;">Powerball</p>
+      </div>
+    </section>
+
+    <section class="middle-content">
+      <div class="mid-title" style="font-weight: bold;">รายละเอียดการจ่ายเงิน</div>
+      <div class="mid-content">
+        <div class="mid-content-1">
+          <div class="productCost">รวมค่าสินค้า</div>
+          <div class="numProductCost">฿ {{productCost}}</div>
+        </div>
+        <div class="mid-content-2">
+          <div class="discount">ส่วนลด</div>
+          <div class="numDiscount">฿ {{discount}}</div>
+        </div>
+        <div class="mid-content-3">
+          <div class="totalCost">ราคารวมทั้งหมด</div>
+          <div class="numTotalCost" style="font-weight: bold; color: red;">฿ {{totalCost}}</div>
+        </div>
+      </div>
+      <div class="mid-footer">
+        <div class="coupon">ใส่คูปองหรือแต้ม</div>
+        <ion-icon name="add-circle" color="danger"></ion-icon>
+      </div>
+    </section>
+
+    <section class="bottom-content">
+      <div class="bot-title" style="font-weight: bold;">รายการที่เลือกไว้</div>
+      <section class="powerBall">
+        <div class="ticket-img"><img src="assets/ticket.jpg"></div>
+        <section>
+          <div class="powerBall-title" style="font-weight: bold;">Powerball Ticket</div>
+          <div class="powerBall-price">ราคา {{ticketPrice}} บาท</div>
+          <div class="powerBall-qty">จำนวน {{ticketQty}} ชิ้น</div>
+        </section>
+      </section>
+      <section class="powerPlay">
+        <div class="powerplay-img"><img src="assets/powerplay.png"></div>
+        <section>
+          <div class="powerPlay-title" style="font-weight: bold;">Powerplay</div>
+          <div class="powerPlay-price">ราคา {{powerPlayPrice}} บาท</div>
+          <div class="powerPlay-qty">จำนวน {{powerPlayQty}} ชิ้น</div>
+        </section>
+      </section>
+    </section>
+
+    <section class="footer">
+      <ion-button class="payBtn" fill="clear" (click)="close()">close</ion-button>
+    </section>
+  </ion-content>
+</ion-app>
+

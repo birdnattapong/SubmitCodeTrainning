@@ -1,0 +1,72 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <div class="header">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="title">Powerball</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <section class="top-content">
+      <div style="font-weight: bold;">สถานะสินค้า</div>
+      <div class="status">
+        <div class="wait">
+          <ion-icon class="arrow1" name="chevron-forward-circle"></ion-icon>
+          <div class="waitmsg">รอ</div>
+        </div>
+        <div class="bought">
+          <ion-icon class="arrow2" name="chevron-forward-circle"></ion-icon>
+          <div class="boughtmsg">ซื้อแล้ว</div>
+        </div>
+        <div class="announced">
+          <ion-icon class="arrow3" name="chevron-forward-circle"></ion-icon>
+          <div class="announcedmsg">ประกาศผล งวด 115 (20/04/2020)</div>
+        </div>
+        
+      </div>
+      <div class="top-footer">
+        <div><ion-icon name="call"></ion-icon></div>
+        <div class="contact">ติดต่อ</div>
+        <div class="cancel">ยกเลิก</div>
+      </div>
+    </section>
+
+    <section class="middle-content">
+      <section class="middle-title">
+        <div class="mid-title">รายการที่สั่ง</div>
+        <ion-icon class="detail-icon" name="newspaper" (click)="goPaymentDetail()"></ion-icon>
+      </section>
+      <section class="middle-comp">
+        <section class="mid-comp-title">
+          <div><b>Powerball</b></div>
+          <div class="orderNo">Order Number : {{tempOrderID}}</div>
+        </section>
+        
+        <div class="Qty">รายการ ({{order.ticketQty}} ชิ้น)</div>
+          <section *ngFor="let tickets of order.tickets; let i = index">
+            <div class="ticket">
+              <div class="whiteBall1">{{tickets.whiteBall[0]}}</div>
+              <div class="whiteBall2">{{tickets.whiteBall[1]}}</div>
+              <div class="whiteBall3">{{tickets.whiteBall[2]}}</div>
+              <div class="whiteBall4">{{tickets.whiteBall[3]}}</div>
+              <div class="whiteBall5">{{tickets.whiteBall[4]}}</div>
+              <div class="powerBall">{{tickets.powerball}}</div>
+            </div>
+          </section> 
+      </section>
+
+      <section>
+        <ion-button class="changeBought" (click)="changeStatusToBought()">B</ion-button>
+        <ion-button class="changeAnnounced" (click)="changeStatusToAnnounced()">A</ion-button>
+      </section>
+    </section>
+
+    <section class="footer">
+      <ion-button class="orderBtn" fill="clear" (click)="close()">Close</ion-button>
+    </section>
+  </ion-content>
+</ion-app>

@@ -1,0 +1,176 @@
+.header {
+    display: flex;
+    color: #eb445a;
+    padding-right: 3%;
+}
+
+.title {
+    text-align: center;
+    transform: translateX(-8%);
+}
+
+ion-back-button{
+    color: #eb445a;
+}
+
+.top-content {
+    padding: 3%;
+    height: 27%;
+}
+
+.top-footer {
+    display: flex;
+}
+
+.status {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.wait {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.waitmsg {
+    color: #cac9c9;
+}
+
+.arrow1 {
+    margin-right: 2%;
+    color: #cac9c9;
+}
+
+.bought {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.boughtmsg {
+    color: #cac9c9;
+}
+
+.arrow2 {
+    margin-right: 2%;
+    color: #cac9c9;
+}
+
+.announced {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.announcedmsg {
+    color: #cac9c9;
+}
+
+.arrow3 {
+    margin-right: 2%;
+    color: #cac9c9;
+}
+
+.contact {
+    position: relative;
+    padding-left: 3%;
+}
+
+.cancel {
+    position: relative;
+    padding-left: 60%;
+}
+
+.middle-content {
+    padding: 3%;
+    border-top: 5px solid #cac9c9;
+}
+
+.middle-title {
+    display: flex;
+    align-items: center;
+}
+
+.mid-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detail-icon {
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    right: 3%;
+}
+
+.middle-comp {
+    margin-top: 2%;
+}
+
+.mid-comp-title {
+    display: flex;
+}
+
+.orderNo {
+    margin-left: 5%;
+}
+
+.Qty {
+    margin-top: 2%;
+}
+
+.ticket {
+    margin-top: 2%;
+    display: flex;
+}
+
+.whiteBall1 {
+    margin-right: 2%;
+}
+
+.whiteBall2 {
+    margin-right: 2%;
+}
+
+.whiteBall3 {
+    margin-right: 2%;
+}
+
+.whiteBall4 {
+    margin-right: 2%;
+}
+
+.whiteBall5 {
+    margin-right: 2%;
+}
+
+.powerBall {
+    margin-right: 2%;
+}
+
+.changeBought {
+    width: 40px;
+}
+
+.changeAnnounced {
+    width: 40px;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ff3434;
+}
+
+.orderBtn {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
